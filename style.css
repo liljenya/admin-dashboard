@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Winky';
+    src: local('Winky'), url('fonts/Winky_Sans/static/WinkySans-Light.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-bar {
+    display: flex;
+    font-family: 'Winky';
+    font-size: 25px;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(255, 161, 192);
+    padding: 15px;
+    width: 15%;
+}
+
+.side-bar img {
+    width: 25px;
+    height: 25px;
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.dash img {
+    width: 45px;
+    height: 45px;
+}
+
+.side-bar-top {
+    display: grid;
+    padding: 20px;
+    gap: 15px;
+}
+
+.side-bar-bottom {
+    display: grid;
+    padding-top: 45px;
+    gap: 15px;
+}
+
+.top {
+    display: flex;
+    margin: 35px;
+    justify-content: space-between;
+    font-family: 'Winky';
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+.top img {
+    width: 25px;
+    height: 25px;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    width: 40rem;
+    height: 30px;
+    background-color: rgb(221, 217, 217);
+}
+
+.top .avatar-top {
+    width: 45px;
+    height: 45px;
+}
+
+.top > div {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom .avatar-bottom {
+    width: 65px;
+    height: 65px;
+}
+
+.bottom {
+    display: flex;
+    margin: 35px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom p {
+    font-family: 'Winky';
+    font-weight: bold;
+}
+
+.greeting {
+    font-size: 15px;
+}
+
+.nickname {
+    font-size: 27px;
+}
+
+.bottom div:last-child {
+    display: flex;
+    gap: 25px;
+}
+
+button {
+    min-width: 150px;
+    height: 45px;
+    text-align: center;
+    font-family: 'Winky';
+    background-color: rgb(255, 161, 192);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    line-height: 3px;
+}
