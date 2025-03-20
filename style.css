@@ -8,6 +8,7 @@
     padding: 0;
 }
 
+
 body {
     display: flex;
     flex-direction: row;
@@ -21,7 +22,7 @@ body {
     height: 100vh;
     background-color: rgb(255, 161, 192);
     padding: 15px;
-    width: 15%;
+    width: 15%;  
 }
 
 .side-bar img {
@@ -60,12 +61,11 @@ body {
 
 .top {
     display: flex;
-    margin: 35px;
     justify-content: space-between;
     font-family: 'Winky';
+    margin: 35px;
     font-size: 18px;
     font-weight: bold;
-    width: 100%;
 }
 
 
@@ -87,7 +87,7 @@ input {
     height: 45px;
 }
 
-.top > div {
+.top>div {
     display: flex;
     gap: 20px;
 }
@@ -101,10 +101,9 @@ input {
     display: flex;
     margin: 35px;
     justify-content: space-between;
-    width: 100%;
 }
 
-.bottom > div {
+.bottom>div {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -141,8 +140,43 @@ button {
     cursor: pointer;
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     line-height: 3px;
+}
+
+
+.content {
+    display: grid;
+    background-color: rgb(221, 217, 217);
+    padding: 30px;
+    font-family: 'Winky';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.projects {
+    display: grid;
+    font-family: 'Winky';
+    font-size: 14px;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 75%;
+}
+
+.projects>div {
+    background-color: rgb(255, 161, 192);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.projects p {
+    font-weight: normal;
+}
+
+.projects img {
+    width: 25px;
+    height: 25px;
 }
