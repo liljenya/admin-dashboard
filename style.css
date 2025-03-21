@@ -17,12 +17,12 @@ body {
 .side-bar {
     display: flex;
     font-family: 'Winky';
-    font-size: 25px;
+    font-size: 16px;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     background-color: rgb(255, 161, 192);
     padding: 15px;
-    width: 15%;  
+    width: 15%;
 }
 
 .side-bar img {
@@ -146,30 +146,35 @@ button {
     line-height: 3px;
 }
 
-
-.content {
-    display: grid;
+.wrapper {
     background-color: rgb(221, 217, 217);
-    padding: 30px;
     font-family: 'Winky';
     font-size: 18px;
     font-weight: bold;
+    padding: 15px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
 }
 
 .projects {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     font-family: 'Winky';
     font-size: 14px;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 75%;
+    margin-top: 10px;
 }
 
 .projects>div {
     background-color: rgb(255, 161, 192);
     padding: 15px;
     border-radius: 10px;
+    border-left: 4px solid black;
 }
 
 .projects p {
@@ -179,4 +184,53 @@ button {
 .projects img {
     width: 25px;
     height: 25px;
+}
+
+
+.announcments {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 2fr);
+    font-size: 14px;
+    padding-left: 15px;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.announcments p {
+    font-weight: normal;
+}
+
+.announcments img {
+    width: 35px;
+    height: 35px;
+}
+
+.announcments>div {
+    background-color: rgb(255, 161, 192);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.headings {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.announcments-header{
+    padding-left: 22px;
+}
+
+.trending div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.trending div > p {
+    padding-left: 7px;
+}
+
+hr {
+    border: 1px solid black;
 }
